@@ -1,6 +1,6 @@
 const resolve = require('path').resolve;
 
-module.exports = {
+module.exports = (env) => ({
   context: resolve('js'),
   entry: "./routes.js",
   output: {
@@ -8,5 +8,5 @@ module.exports = {
     filename: './bundle.js',
     publicPath: '/dist/',
   },
-  devtool: 'source-map',
-}
+  devtool: env.dev ? 'eval' : 'source-map',
+})

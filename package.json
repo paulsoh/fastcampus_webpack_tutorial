@@ -12,9 +12,9 @@
     "webpack-dev-server": "^2.5.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build:dev": "webpack",
-    "build": "webpack -p",
-    "start": "http-server --silent"
+    "dev": "webpack-dev-server --env.dev",
+    "build:dev": "webpack --env.dev",
+    "build": "webpack -p --env.prod",
+    "start": "http-server --silent --env.prod"
   }
 }

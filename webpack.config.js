@@ -16,6 +16,10 @@ module.exports = (env) => ({
         loaders: ['babel-loader'],
         exclude: '/node_modules/',
       },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader'],
+      },
     ],
   },
   devtool: env.dev ? 'eval' : 'source-map',

@@ -25,6 +25,7 @@ module.exports = (env) => ({
         loader: 'url-loader',
         query: {
           limit: 1024,
+          name: 'assets/[name].[hash:8].[ext]',
         }
       },
     ],

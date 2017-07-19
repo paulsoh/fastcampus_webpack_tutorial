@@ -1,4 +1,6 @@
 /*global app, Router */
+import 'todomvc-common/base.css';
+import 'todomvc-app-css/index.css';
 
 var app = require('./app');
 import {

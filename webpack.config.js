@@ -7,6 +7,7 @@ module.exports = (env) => ({
     path: resolve('dist'),
     filename: './bundle.js',
     publicPath: '/dist/',
+    pathinfo: true,
   },
   devtool: env.dev ? 'eval' : 'source-map',
 })

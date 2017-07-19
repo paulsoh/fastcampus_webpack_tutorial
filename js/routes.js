@@ -2,6 +2,7 @@
 import 'todomvc-common/base.css';
 import 'todomvc-app-css/index.css';
 import './insertImageToHtml';
+import './insertCommentsToHtml';
 
 var app = require('./app');
 import {

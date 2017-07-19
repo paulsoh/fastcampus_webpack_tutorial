@@ -20,6 +20,13 @@ module.exports = (env) => ({
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1024,
+        }
+      },
     ],
   },
   devtool: env.dev ? 'eval' : 'source-map',

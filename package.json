@@ -7,9 +7,11 @@
     "todomvc-app-css": "^2.0.0"
   },
   "devDependencies": {
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "webpack": "^3.3.0"
   },
   "scripts": {
-    "dev": "http-server --silent"
+    "dev": "http-server --silent",
+    "build:dev": "webpack"
   }
 }

@@ -12,6 +12,6 @@
   },
   "scripts": {
     "dev": "http-server --silent",
-    "build:dev": "webpack"
+    "build:dev": "webpack --watch"
   }
 }

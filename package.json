@@ -5,5 +5,8 @@
     "vue": "^2.1.8",
     "todomvc-common": "^1.0.1",
     "todomvc-app-css": "^2.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
   }
 }

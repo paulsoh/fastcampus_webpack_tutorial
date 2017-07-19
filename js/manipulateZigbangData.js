@@ -1,6 +1,5 @@
 import data from './zigbangData';
-
-console.log(data);
+import _ from 'lodash';
 
 // Simple Exercise #1
 const answerOne = data.items.filter((room) => {
@@ -43,3 +42,23 @@ const answerFour = data.items
   })
 
 console.log(answerFour);
+
+// Challenging Exercise #1
+const roomsList = _.filter(data.items, (room) => {
+  return room.item.rent >= 70;
+})
+
+const roomsLocalList = _.map(roomsList, (room) => {
+  return room.item.local3;
+})
+
+const uniqueLocalList = _.uniq(roomsLocalList);
+
+const finalAnswer = uniqueLocalList.map((local) => {
+  return {
+    name: local,
+    count: _.filter(roomsList, (room) => room.item.local3 === local).length,
+  }
+})
+
+console.log(finalAnswer);

@@ -1,6 +1,10 @@
+const resolve = require('path').resolve;
+
 module.exports = {
-  entry: "./js/routes.js",
+  context: resolve('js'),
+  entry: "./routes.js",
   output: {
+    path: resolve('dist'),
     filename: './bundle.js',
   },
 }

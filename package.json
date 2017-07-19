@@ -14,6 +14,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build:dev": "webpack",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "http-server --silent"
   }
 }

@@ -8,10 +8,11 @@
   },
   "devDependencies": {
     "http-server": "^0.10.0",
-    "webpack": "^3.3.0"
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "scripts": {
-    "dev": "http-server --silent",
+    "dev": "webpack-dev-server",
     "build:dev": "webpack --watch"
   }
 }

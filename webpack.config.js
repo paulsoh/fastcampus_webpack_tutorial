@@ -6,5 +6,6 @@ module.exports = {
   output: {
     path: resolve('dist'),
     filename: './bundle.js',
+    publicPath: '/dist/',
   },
 }

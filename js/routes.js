@@ -20,6 +20,6 @@
 	});
 
 	router.init();
-  console.log("Router Intitiated!!!");
+  console.log("Router Intitiated!!!!!!!");
 
 })(app, Router);

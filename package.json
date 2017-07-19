@@ -7,6 +7,8 @@
     "todomvc-app-css": "^2.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
     "http-server": "^0.10.0",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"

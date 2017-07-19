@@ -9,5 +9,14 @@ module.exports = (env) => ({
     publicPath: '/dist/',
     pathinfo: true,
   },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ['babel-loader'],
+        exclude: '/node_modules/',
+      },
+    ],
+  },
   devtool: env.dev ? 'eval' : 'source-map',
 })
